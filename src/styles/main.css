@@ -125,7 +125,6 @@
         padding: 15px;
         cursor: pointer;
         font-size: 16px;
-       
       }
 
       .btn-1 {
@@ -145,9 +144,67 @@
         border-color: var(--white-500);
         &:hover {
           border-color: var(--red-500);
-          color:var(--red-500);
+          color: var(--red-500);
         }
       }
     }
+  }
+}
+
+/* Stokda olan avtomobiller */
+.grid-container {
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+position: relative;
+  .grid-item {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    gap: 15px;
+    .grid-img {
+      width: 100%;
+    }
+    button {
+      padding: 13px;
+      border: none;
+      font-size: 17px;
+      background-color: var(--gray-600);
+      color: var(--white-500);
+    }
+  }
+
+  .grid-arrows {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-between;
+
+    & button{
+      border: none;
+      padding: 11px;
+      font-size:18px;
+      width: 60px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      color:var(--white-500);
+      background-color: var(--black-500);
+    }
+  }
+}
+
+.grid-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  width: 100%;
+  height: 100px;
+  .grid-circle {
+    width: 13px;
+    height: 13px;
+    background-color: var(--gray-500);
+    border-radius: 50%;
   }
 }
